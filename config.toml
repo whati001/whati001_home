@@ -1,0 +1,72 @@
+baseURL = "https://whati001.rehka.dev"
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
+subtitle = "Andreas Karner"
+theme = "gokarna"
+title = "whati001"
+
+# Choose one of emacs, trac or perldoc
+pygmentsStyle = "monokai"
+
+[params]
+avatarSize = "size-l"
+avatarURL = "/images/avatar.webp"
+customHeadHTML = """
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/katex.min.css" integrity="sha384-6LkG2wmY8FK9E0vU9OOr8UvLwsaqUg9SETfpq4uTCN1agNe8HRdE9ABlk+fVx6gZ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/katex.min.js" integrity="sha384-31El76TwmbHj4rF9DyLsygbq6xoIobG0W+jqXim+a3dU9W53tdH3A/ngRPxOzzaB" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  """
+
+description = "let tasks: LifeTasks = ['student', 'hobby coder', 'farmer']"
+footer = "whati001"
+metaKeywords = ["whati001", "security researcher"]
+socialIcons = [
+  {name = "twitter", url = "https://twitter.com/whati001"},
+  {name = "linkedin", url = "https://www.linkedin.com/in/andreas-karner-54b508170/"},
+  {name = "stackoverflow", url = "https://stackoverflow.com/users/5129488/whati001"},
+  {name = "github", url = "https://github.com/whati001"},
+  {name = "iota", url = "https://iota.rehka.dev"},
+]
+subTitle = "Andreas Karner"
+
+[menu]
+[[menu.main]]
+name = "Home"
+pre = "<span data-feather='home'></span>"
+url = "/"
+weight = 1
+
+# [[menu.main]]
+# name = "Projects"
+# url = "/projects/"
+# weight = 2
+
+[[menu.main]]
+name = "Mail"
+pre = "<span data-feather='mail'></span>"
+url = "mailto: andreas.karner@student.tugraz.at"
+weight = 2
+
+[[menu.main]]
+name = "CV"
+pre = "<span data-feather='book'></span>"
+url = "https://whati001.rehka.dev/docs/CV_KarnerAndreas.pdf"
+weight = 3
+
+[[menu.main]]
+name = "did"
+# identifier = "did-iota"
+pre = "<span data-feather='user'></span>"
+url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:63NcfDLbaMX3DVR2MRtGxL3ZDb8uo74NLLYwadpBzNJA"
+weight = 4
+
+[[menu.main]]
+name = "Coffee"
+pre = "<span data-feather='coffee'></span>"
+url = "https://www.buymeacoffee.com/whati001"
+weight = 5
