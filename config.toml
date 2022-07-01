@@ -62,7 +62,7 @@ weight = 3
 name = "did"
 # identifier = "did-iota"
 pre = "<span data-feather='user'></span>"
-url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:63NcfDLbaMX3DVR2MRtGxL3ZDb8uo74NLLYwadpBzNJA"
+url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:FEDfsEhAQoFgFFhbX5EqaU6uewSsydGVkGKfvYrJGSrh"
 weight = 4
 
 [[menu.main]]
