@@ -7,6 +7,7 @@ subtitle = "Andreas Karner"
 theme = "gokarna"
 title = "whati001"
 
+
 # Choose one of emacs, trac or perldoc
 pygmentsStyle = "monokai"
 
@@ -22,7 +23,7 @@ customHeadHTML = """
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   """
 
-description = "let tasks: LifeTasks = ['student', 'hobby coder', 'farmer']"
+description = "let tasks: LifeTasks = ['researcher', 'engineer', 'maker', 'farmer']"
 footer = "whati001"
 metaKeywords = ["whati001", "security researcher"]
 socialIcons = [
@@ -35,38 +36,39 @@ socialIcons = [
 subTitle = "Andreas Karner"
 
 [menu]
-[[menu.main]]
-name = "Home"
-pre = "<span data-feather='home'></span>"
-url = "/"
-weight = 1
+  [[menu.main]]
+  name = "Home"
+  pre = "<span data-feather='home'></span>"
+  url = "/"
+  weight = 1
 
-# [[menu.main]]
-# name = "Projects"
-# url = "/projects/"
-# weight = 2
+  [[menu.main]]
+  name = "Projects"
+  pre = "<span data-feather='layers'></span>"
+  url = "/projects/"
+  weight = 2
 
-[[menu.main]]
-name = "Mail"
-pre = "<span data-feather='mail'></span>"
-url = "mailto: andreas.karner@student.tugraz.at"
-weight = 2
+  [[menu.main]]
+  name = "Mail"
+  pre = "<span data-feather='mail'></span>"
+  url = "mailto: andreas.karner@student.tugraz.at"
+  weight = 2
 
-[[menu.main]]
-name = "CV"
-pre = "<span data-feather='book'></span>"
-url = "https://whati001.rehka.dev/docs/CV_KarnerAndreas.pdf"
-weight = 3
+  [[menu.main]]
+  name = "CV"
+  pre = "<span data-feather='book'></span>"
+  url = "https://whati001.rehka.dev/docs/CV_KarnerAndreas.pdf"
+  weight = 3
 
-[[menu.main]]
-name = "did"
-# identifier = "did-iota"
-pre = "<span data-feather='user'></span>"
-url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:FEDfsEhAQoFgFFhbX5EqaU6uewSsydGVkGKfvYrJGSrh"
-weight = 4
+  [[menu.main]]
+  name = "DID"
+  # identifier = "did-iota"
+  pre = "<span data-feather='user'></span>"
+  url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:FEDfsEhAQoFgFFhbX5EqaU6uewSsydGVkGKfvYrJGSrh"
+  weight = 4
 
-[[menu.main]]
-name = "Coffee"
-pre = "<span data-feather='coffee'></span>"
-url = "https://www.buymeacoffee.com/whati001"
-weight = 5
+  [[menu.main]]
+  name = "Coffee"
+  pre = "<span data-feather='coffee'></span>"
+  url = "https://www.buymeacoffee.com/whati001"
+  weight = 5
