@@ -31,7 +31,7 @@ socialIcons = [
   {name = "linkedin", url = "https://www.linkedin.com/in/andreas-karner-54b508170/"},
   {name = "stackoverflow", url = "https://stackoverflow.com/users/5129488/whati001"},
   {name = "github", url = "https://github.com/whati001"},
-  {name = "iota", url = "https://iota.rehka.dev"},
+  # {name = "iota", url = "https://iota.rehka.dev"},
 ]
 subTitle = "Andreas Karner"
 
@@ -51,7 +51,7 @@ subTitle = "Andreas Karner"
   [[menu.main]]
   name = "Mail"
   pre = "<span data-feather='mail'></span>"
-  url = "mailto: andreas.karner@student.tugraz.at"
+  url = "mailto: whati001@outlook.com"
   weight = 2
 
   [[menu.main]]
@@ -60,12 +60,12 @@ subTitle = "Andreas Karner"
   url = "https://whati001.rehka.dev/docs/CV_KarnerAndreas.pdf"
   weight = 3
 
-  [[menu.main]]
-  name = "DID"
-  # identifier = "did-iota"
-  pre = "<span data-feather='user'></span>"
-  url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:FEDfsEhAQoFgFFhbX5EqaU6uewSsydGVkGKfvYrJGSrh"
-  weight = 4
+  # [[menu.main]]
+  # name = "DID"
+  # # identifier = "did-iota"
+  # pre = "<span data-feather='user'></span>"
+  # url = "https://explorer.iota.org/mainnet/identity-resolver/did:iota:FEDfsEhAQoFgFFhbX5EqaU6uewSsydGVkGKfvYrJGSrh"
+  # weight = 4
 
   [[menu.main]]
   name = "Coffee"
