@@ -5,47 +5,47 @@
       "url": "https://github.com/whati001/tuwire",
       "summary": "",
       "repo": "whati001/tuwire",
-      "fetched_at": "2025-12-27T18:23:42.497061Z"
+      "fetched_at": "2025-12-27T18:24:41.629036Z"
     },
     {
       "name": "Morgeb - Wordclock replica",
       "url": "https://github.com/whati001/morgeb",
       "summary": "**Morgeb** - the friendly word clock for every day's morning. This project should be a guideline for building your customized word clock. It contains the code and the manufacturing steps for my own version of the word clock, as shown below. The clock is 900x900 mm in size and weighs approximately 24 kg. The front is entirely rusted and looks terrific.",
       "repo": "whati001/morgeb",
-      "fetched_at": "2025-12-27T18:23:43.108786Z"
+      "fetched_at": "2025-12-27T18:24:42.037665Z"
     },
     {
       "name": "Tuff-Tuff-Light - Wireless Trailer Light",
       "url": "https://github.com/whati001/tuff-tuff-light",
       "summary": "A robust, modular, and completely wireless trailer lighting system designed for agricultural machinery, utilizing BLE communication. \nBuilt on the **nRF52840 SoC** and developed with the **Zephyr RTOS**, this project includes custom-designed PCBs and 3D printed enclosures for reliable field use.\nThe choose design enables seamless connectivity without complicated pairing procedures and also allows to connect up to infinite receiver lights to a single sender.",
       "repo": "whati001/tuff-tuff-light",
-      "fetched_at": "2025-12-27T18:23:43.673299Z"
+      "fetched_at": "2025-12-27T18:24:42.437727Z"
     },
     {
       "name": "Keksbox - NFC Tag Music Box",
       "url": "https://github.com/whati001/keksbox",
       "summary": "Overview\r\n\r\nThe Keksbox is a homegrown music box that allows streaming of audio files/audiobooks to an external speaker. The usability is child-friendly, as it utilizes \"keks\" tags instead of traditional CDs or otherwise. Streaming to a loudspeaker instead of a headset lets us share fun and experience the audiobooks together. The box differentiates between a standard and custom audio set. The standard set should be \"burned\" to the device during setup, whereby the custom set can be adjusted at any time via a web-based portal. This allows parents to assign each \"keks\" a default audio file, and the children can overwrite it with their audio files.\r\n\r\nThe project aims to demonstrate that everybody with a basic background can develop nice products. Studying a programming language or software architecture for years is unnecessary. Instead, managing to empower Linux is sufficient to build starving products.",
       "repo": "whati001/keksbox",
-      "fetched_at": "2025-12-27T18:23:44.356642Z"
+      "fetched_at": "2025-12-27T18:24:42.850067Z"
     },
     {
       "name": "CoffeeRat - SmartScale",
       "url": "https://www.youtube.com/watch?v=EL8P_DzBC0U",
       "summary": "Smart scale for coffee brewing with real-time weight tracking",
-      "fetched_at": "2025-12-27T18:23:44.356653Z"
+      "fetched_at": "2025-12-27T18:24:42.850077Z"
     },
     {
       "name": "Stmk. Fischerpr\u00fcfung Onlinefragenkatalog",
       "url": "https://fisch.rehka.dev/",
       "summary": "Online quiz platform for Styrian fishing license exam",
-      "fetched_at": "2025-12-27T18:23:44.356657Z"
+      "fetched_at": "2025-12-27T18:24:42.850079Z"
     },
     {
       "name": "SipLine - VoIP sniffer",
       "url": "https://github.com/whati001/sipline",
       "summary": "Simple SIP package sniffer writtin in plain C. The aim of this application is to watch incomming traffic on the nic and send out a ping message to your target host if an [SIP](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) `INVITE` occur.",
       "repo": "whati001/sipline",
-      "fetched_at": "2025-12-27T18:23:44.975171Z"
+      "fetched_at": "2025-12-27T18:24:43.223048Z"
     }
   ]
 }
