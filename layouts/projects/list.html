@@ -100,7 +100,7 @@
 
     {{ if .summary }}
     <div class="project-summary">
-      {{ .summary }}
+      {{ .summary | markdownify }}
     </div>
     {{ else }}
     <div class="project-summary no-summary">
