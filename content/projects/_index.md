@@ -1,6 +1,5 @@
 ---
 title: "Projects"
-type: page
 projects:
   - name: "TuWire - Juice Jack Apple Devices"
     repo: "whati001/tuwire"
