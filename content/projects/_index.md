@@ -1,15 +1,22 @@
 ---
 title: "Projects"
-type: page
+projects:
+  - name: "TuWire - Juice Jack Apple Devices"
+    repo: "whati001/tuwire"
+  - name: "Morgeb - Wordclock replica"
+    repo: "whati001/morgeb"
+  - name: "Tuff-Tuff-Light - Wireless Trailer Light"
+    repo: "whati001/tuff-tuff-light"
+  - name: "Keksbox - NFC Tag Music Box"
+    repo: "whati001/keksbox"
+  - name: "CoffeeRat - SmartScale"
+    url: "https://www.youtube.com/watch?v=EL8P_DzBC0U"
+    description: "Smart scale for coffee brewing with real-time weight tracking"
+  - name: "Stmk. Fischerprüfung Onlinefragenkatalog"
+    url: "https://fisch.rehka.dev/"
+    description: "Online quiz platform for Styrian fishing license exam"
+  - name: "SipLine - VoIP sniffer"
+    repo: "whati001/sipline"
 ---
 
-
-### Projects/Portfolio
-
-1. [TuWire - Juice Jack Apple Devices](https://github.com/whati001/tuwire)
-2. [Morgeb - Wordclock replica](https://github.com/whati001/morgeb)
-3. [Tuff-Tuff-Light - Wireless Trailer Light](https://github.com/whati001/tuff-tuff-light)
-4. [Keksbox - NFC Tag Music Box](https://github.com/whati001/keksbox)
-5. [CoffeeRat - SmartScale (proprietary)](https://www.youtube.com/watch?v=EL8P_DzBC0U)
-6. [Stmk. Fischerprüfung Onlinefragenkatalog](https://fisch.rehka.dev/)
-7. [SipLine - VoIP sniffer](https://github.com/whati001/sipline)
+This page displays my projects with automatically fetched summaries from GitHub.

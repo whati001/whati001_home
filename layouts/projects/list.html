@@ -1,0 +1,130 @@
+{{ define "main" }}
+<div class="post-title">
+  <h1>{{ .Title }}</h1>
+</div>
+
+{{ if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{ end }}
+
+{{ if .Site.Data.projects }}
+<style>
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  border: 1px solid var(--border-color, #e1e4e8);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--card-background, #ffffff);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+  color: var(--heading-color, #24292e);
+}
+
+.project-card h3 a:hover {
+  color: var(--link-color, #0366d6);
+}
+
+.project-summary {
+  color: var(--text-muted, #586069);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--link-color, #0366d6);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.no-summary {
+  color: var(--text-muted, #586069);
+  font-style: italic;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    --border-color: #30363d;
+    --card-background: #161b22;
+    --heading-color: #c9d1d9;
+    --text-muted: #8b949e;
+    --link-color: #58a6ff;
+  }
+}
+
+/* Responsive: single column on mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="projects-grid">
+  {{ range .Site.Data.projects.projects }}
+  <div class="project-card">
+    <h3>
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+        {{ .name }}
+      </a>
+    </h3>
+
+    {{ if .summary }}
+    <div class="project-summary">
+      {{ .summary }}
+    </div>
+    {{ else }}
+    <div class="project-summary no-summary">
+      No description available
+    </div>
+    {{ end }}
+
+    {{ if .repo }}
+    <a href="{{ .url }}" class="project-link" target="_blank" rel="noopener noreferrer">
+      View on GitHub →
+    </a>
+    {{ else }}
+    <a href="{{ .url }}" class="project-link" target="_blank" rel="noopener noreferrer">
+      Visit Project →
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+{{ else }}
+<div class="post-content">
+  <p><em>No project data available. Run the GitHub Action to fetch project summaries.</em></p>
+</div>
+{{ end }}
+
+{{ end }}

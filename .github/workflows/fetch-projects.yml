@@ -1,0 +1,132 @@
+name: Fetch Project Summaries
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/projects/_index.md'
+
+jobs:
+  fetch-summaries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install PyYAML requests
+
+      - name: Fetch project summaries
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python << 'EOF'
+          import yaml
+          import json
+          import requests
+          import os
+          import re
+          from datetime import datetime
+
+          # Read front matter from _index.md
+          with open('content/projects/_index.md', 'r') as f:
+              content = f.read()
+
+          # Extract YAML front matter
+          match = re.match(r'^---\n(.*?)\n---', content, re.DOTALL)
+          if not match:
+              print("Error: No front matter found")
+              exit(1)
+
+          front_matter = yaml.safe_load(match.group(1))
+          projects_config = front_matter.get('projects', [])
+
+          # Fetch summaries
+          projects_data = []
+          headers = {'Authorization': f"token {os.environ['GITHUB_TOKEN']}"}
+
+          for project in projects_config:
+              project_entry = {
+                  'name': project.get('name', 'Unnamed Project'),
+                  'url': project.get('url', ''),
+                  'summary': project.get('description', '')
+              }
+
+              # If repo specified, fetch README
+              if 'repo' in project:
+                  repo = project['repo']
+                  project_entry['repo'] = repo
+
+                  # Default to GitHub URL if not specified
+                  if not project_entry['url']:
+                      project_entry['url'] = f"https://github.com/{repo}"
+
+                  # Fetch README from GitHub API
+                  api_url = f"https://api.github.com/repos/{repo}/readme"
+                  try:
+                      response = requests.get(api_url, headers=headers)
+                      if response.status_code == 200:
+                          readme_data = response.json()
+                          # Get download URL for raw content
+                          download_url = readme_data.get('download_url')
+                          if download_url:
+                              readme_response = requests.get(download_url)
+                              if readme_response.status_code == 200:
+                                  readme_content = readme_response.text
+
+                                  # Extract first paragraph
+                                  # Remove front matter if present
+                                  readme_content = re.sub(r'^---\n.*?\n---\n', '', readme_content, flags=re.DOTALL)
+                                  # Remove leading/trailing whitespace
+                                  readme_content = readme_content.strip()
+                                  # Split by double newline or heading
+                                  paragraphs = re.split(r'\n\n+|\n#+\s', readme_content)
+                                  # Find first non-empty paragraph
+                                  for para in paragraphs:
+                                      para = para.strip()
+                                      # Skip if it's just a heading, image, or link
+                                      if para and not para.startswith('#') and not para.startswith('!') and not para.startswith('['):
+                                          project_entry['summary'] = para
+                                          break
+
+                                  print(f"✓ Fetched summary for {project['name']}")
+                      else:
+                          print(f"⚠ Could not fetch README for {repo}: {response.status_code}")
+                  except Exception as e:
+                      print(f"⚠ Error fetching {repo}: {str(e)}")
+
+              # Add timestamp
+              project_entry['fetched_at'] = datetime.utcnow().isoformat() + 'Z'
+              projects_data.append(project_entry)
+
+          # Write to data file
+          os.makedirs('data', exist_ok=True)
+          with open('data/projects.json', 'w') as f:
+              json.dump({'projects': projects_data}, f, indent=2)
+
+          print(f"\n✓ Generated data/projects.json with {len(projects_data)} projects")
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/projects.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update project summaries
+
+          🤖 Generated with GitHub Actions"
+            git push
+          fi
