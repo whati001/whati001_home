@@ -17,6 +17,10 @@ projects:
     description: "Online quiz platform for Styrian fishing license exam"
   - name: "SipLine - VoIP sniffer"
     repo: "whati001/sipline"
+  - name: "Babywatch"
+    repo: "whati001/babywatch"
+  - name: "ZoomFromTheMoon"
+    repo: "whati001/ZoomFromTheMoon"
 ---
 
 This page displays my projects with automatically fetched summaries from GitHub.
