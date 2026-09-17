@@ -24,7 +24,7 @@ projects:
   - name: "Tell Me Pi"
     repo: "whati001/tell_me_pi"
   - name: "Bauernkarte"
-    repo: "whati001/bauerkarte"
+    repo: "whati001/bauernkarte"
   - name: "ccursor - simple C string parser"
     repo: "whati001/ccursor"
 
