@@ -5,61 +5,82 @@
       "url": "https://github.com/whati001/tuwire",
       "summary": "",
       "repo": "whati001/tuwire",
-      "fetched_at": "2026-07-01T03:56:31.511573Z"
+      "fetched_at": "2026-09-17T17:45:13.800456Z"
     },
     {
       "name": "Morgeb - Wordclock replica",
       "url": "https://github.com/whati001/morgeb",
       "summary": "**Morgeb** - the friendly word clock for every day's morning. This project should be a guideline for building your customized word clock. It contains the code and the manufacturing steps for my own version of the word clock, as shown below. The clock is 900x900 mm in size and weighs approximately 24 kg. The front is entirely rusted and looks terrific.",
       "repo": "whati001/morgeb",
-      "fetched_at": "2026-07-01T03:56:32.123679Z"
+      "fetched_at": "2026-09-17T17:45:14.296001Z"
     },
     {
       "name": "Tuff-Tuff-Light - Wireless Trailer Light",
       "url": "https://github.com/whati001/tuff-tuff-light",
       "summary": "A robust, modular, and completely wireless trailer lighting system designed for agricultural machinery, utilizing BLE communication. \nBuilt on the **nRF52840 SoC** and developed with the **Zephyr RTOS**, this project includes custom-designed PCBs and 3D printed enclosures for reliable field use.\nThe choose design enables seamless connectivity without complicated pairing procedures and also allows to connect up to infinite receiver lights to a single sender.",
       "repo": "whati001/tuff-tuff-light",
-      "fetched_at": "2026-07-01T03:56:32.772398Z"
+      "fetched_at": "2026-09-17T17:45:14.751631Z"
     },
     {
       "name": "Keksbox - NFC Tag Music Box",
       "url": "https://github.com/whati001/keksbox",
       "summary": "Overview\r\n\r\nThe Keksbox is a homegrown music box that allows streaming of audio files/audiobooks to an external speaker. The usability is child-friendly, as it utilizes \"keks\" tags instead of traditional CDs or otherwise. Streaming to a loudspeaker instead of a headset lets us share fun and experience the audiobooks together. The box differentiates between a standard and custom audio set. The standard set should be \"burned\" to the device during setup, whereby the custom set can be adjusted at any time via a web-based portal. This allows parents to assign each \"keks\" a default audio file, and the children can overwrite it with their audio files.\r\n\r\nThe project aims to demonstrate that everybody with a basic background can develop nice products. Studying a programming language or software architecture for years is unnecessary. Instead, managing to empower Linux is sufficient to build starving products.",
       "repo": "whati001/keksbox",
-      "fetched_at": "2026-07-01T03:56:33.679313Z"
+      "fetched_at": "2026-09-17T17:45:15.539068Z"
     },
     {
       "name": "CoffeeRat - SmartScale",
       "url": "https://www.youtube.com/watch?v=EL8P_DzBC0U",
       "summary": "Smart scale for coffee brewing with real-time weight tracking",
-      "fetched_at": "2026-07-01T03:56:33.679324Z"
+      "fetched_at": "2026-09-17T17:45:15.539074Z"
     },
     {
       "name": "Stmk. Fischerpr\u00fcfung Onlinefragenkatalog",
       "url": "https://fisch.rehka.dev/",
       "summary": "Online quiz platform for Styrian fishing license exam",
-      "fetched_at": "2026-07-01T03:56:33.679326Z"
+      "fetched_at": "2026-09-17T17:45:15.539076Z"
     },
     {
       "name": "SipLine - VoIP sniffer",
       "url": "https://github.com/whati001/sipline",
       "summary": "Simple SIP package sniffer writtin in plain C. The aim of this application is to watch incomming traffic on the nic and send out a ping message to your target host if an [SIP](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) `INVITE` occur.",
       "repo": "whati001/sipline",
-      "fetched_at": "2026-07-01T03:56:34.455765Z"
+      "fetched_at": "2026-09-17T17:45:16.095343Z"
     },
     {
       "name": "Babywatch",
       "url": "https://github.com/whati001/babywatch",
       "summary": "Babywatch is the tiny baby camera that goes wherever your baby goes.",
       "repo": "whati001/babywatch",
-      "fetched_at": "2026-07-01T03:56:35.036493Z"
+      "fetched_at": "2026-09-17T17:45:16.597349Z"
     },
     {
       "name": "ZoomFromTheMoon",
       "url": "https://github.com/whati001/ZoomFromTheMoon",
       "summary": "Generate a \"from space, zoom to an address\" animated GIF for any location \u2014\n**entirely in your browser**, fully free stack, no paid API keys, no backend.",
       "repo": "whati001/ZoomFromTheMoon",
-      "fetched_at": "2026-07-01T03:56:35.579489Z"
+      "fetched_at": "2026-09-17T17:45:17.072082Z"
+    },
+    {
+      "name": "Tell Me Pi",
+      "url": "https://github.com/whati001/tell_me_pi",
+      "summary": "This project aims to provide a interface for the product management and the support team to ask questions about a code base. \nThe idea is to use a coding harness ([oh-my-pi](https://github.com/can1357/oh-my-pi) in this case) and expose it as a legitimate OpenAI-compatible server (`/v1/models`, `/v1/chat/completions`) through [OpenWebUI](https://github.com/open-webui/open-webui) web ui to the teams. The agent is read-only and can checkout the project code via a custom tool called `repo`, which allows to fetch and navigate in the source tree. Everything else is blocked, no `bash`, `read`, `write`, etc.",
+      "repo": "whati001/tell_me_pi",
+      "fetched_at": "2026-09-17T17:45:17.475601Z"
+    },
+    {
+      "name": "Bauernkarte",
+      "url": "https://github.com/whati001/bauerkarte",
+      "summary": "",
+      "repo": "whati001/bauerkarte",
+      "fetched_at": "2026-09-17T17:45:17.629053Z"
+    },
+    {
+      "name": "ccursor - simple C string parser",
+      "url": "https://github.com/whati001/ccursor",
+      "summary": "Ccusor is a very simple, straightforward fixed string parsing library written and designed for C based projects. Working with strings in C is not trivial and requires a lot of caution to not mess around with the memory. This library aims to simplify string handling by implementing the cursor design pattern.",
+      "repo": "whati001/ccursor",
+      "fetched_at": "2026-09-17T17:45:18.092167Z"
     }
   ]
 }
