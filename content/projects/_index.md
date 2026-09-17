@@ -21,6 +21,13 @@ projects:
     repo: "whati001/babywatch"
   - name: "ZoomFromTheMoon"
     repo: "whati001/ZoomFromTheMoon"
+  - name: "Tell Me Pi"
+    repo: "whati001/tell_me_pi"
+  - name: "Bauernkarte"
+    repo: "whati001/bauerkarte"
+  - name: "ccursor - simple C string parser"
+    repo: "whati001/ccursor"
+
 ---
 
 This page displays my projects with automatically fetched summaries from GitHub.
